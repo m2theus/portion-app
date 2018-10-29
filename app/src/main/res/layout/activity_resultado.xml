@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="29dp"
-        android:fontFamily="@font/-"
+        android:fontFamily="@font/roboto"
         android:text="@string/resultado"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
