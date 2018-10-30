@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo"
     android:orientation="vertical"
-    tools:context=".ComidaActivity"
-    android:background="@drawable/fundo">
+    tools:context=".ComidaActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +17,8 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
             app:srcCompat="@drawable/comidatitle" />
     </LinearLayout>
 
@@ -67,10 +67,10 @@
                 android:id="@+id/edit1"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginBottom="27dp"
+                android:layout_alignParentBottom="true"
                 android:layout_marginEnd="44dp"
+                android:layout_marginBottom="27dp"
                 android:layout_weight="3"
                 android:background="@drawable/edittext" />
 
@@ -78,20 +78,28 @@
                 android:id="@+id/preco1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_alignTop="@+id/edit2"
+                android:layout_alignParentStart="true"
                 android:layout_marginStart="49dp"
                 android:fontFamily="@font/roboto"
                 android:text="@string/preco"
                 android:textColor="@android:color/white"
                 android:textSize="24sp" />
 
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/preco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_price"
+                android:inputType="number"
+                app:mask="#,##" />
+
             <EditText
                 android:id="@+id/edit2"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
-                android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/edit1"
+                android:layout_alignParentTop="true"
                 android:layout_marginTop="23dp"
                 android:background="@drawable/edittext" />
         </RelativeLayout>
@@ -142,8 +150,8 @@
                 android:id="@+id/edit3"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
-                android:layout_alignBottom="@+id/peso2"
                 android:layout_alignStart="@+id/edit4"
+                android:layout_alignBottom="@+id/peso2"
                 android:layout_weight="3"
                 android:background="@drawable/edittext" />
 
@@ -162,17 +170,22 @@
                 android:id="@+id/edit4"
                 android:layout_width="200dp"
                 android:layout_height="43dp"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginBottom="28dp"
+                android:layout_alignParentBottom="true"
                 android:layout_marginEnd="43dp"
+                android:layout_marginBottom="28dp"
                 android:layout_weight="1"
                 android:background="@drawable/edittext" />
+
+            <ListView
+                android:id="@+id/lista"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
         </RelativeLayout>
 
 
     </LinearLayout>
-
 
 
     <LinearLayout
