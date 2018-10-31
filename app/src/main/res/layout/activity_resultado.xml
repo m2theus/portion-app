@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".BebidaActivity"
     android:background="@drawable/fundo">
-
+  
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textoTeste"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -36,6 +36,6 @@
         android:layout_marginTop="29dp"
         android:fontFamily="@font/roboto"
         android:textColor="@android:color/white"
+        android:text="@string/resultado"
         android:textSize="24sp" />
-
 </LinearLayout>
